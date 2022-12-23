@@ -1,10 +1,7 @@
-import { Body, Controller, Delete, Get, HttpStatus, Param, Post, Put, Request, Res } from '@nestjs/common';
+import { Body, Controller, Delete, Get, HttpStatus, Param, Post, Put, Res } from '@nestjs/common';
 import { Req } from '@nestjs/common/decorators';
 import { AuthService } from '../auth/auth.service';
-import { JwtAuthGuard } from '../auth/jwt.auth.gaurd';
-import { IPost } from '../shared/interface/post.interface';
 import { CreatePostModel, UpdatePostModel } from '../shared/models/post.model';
-// import { post } from '../shared/models/schema/post.scema';
 import { PostService } from './post.service';
 
 @Controller('api')
